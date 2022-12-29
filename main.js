@@ -13,7 +13,7 @@ var button = document.querySelector("button")
 
 function generateRandomString() {
   let str = '';
-  for (let i = 0; i < 9; i++) {
+  for (let i = 2; i < 10; i++) {
     let num = Math.floor(Math.random() * 3);
     let charCode;
     if (num === 0) {

@@ -84,7 +84,7 @@ button.addEventListener('click', () => {
 });
 
 h1.addEventListener('click', () => {
-  var copyText = document.querySelector("h1");
+  var copyText = h1.textContent;
 
   copyText.select();
   copyText.setSelectionRange(0, 99999);

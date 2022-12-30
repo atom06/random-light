@@ -92,4 +92,4 @@ h1.addEventListener('click', () => {
   navigator.clipboard.writeText(copyText.value);
 
   alert("Copied: " + copyText.value);
-})
+}); console.log('1.0.0', 'first commit')

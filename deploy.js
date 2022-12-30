@@ -19,7 +19,7 @@ rl.question('Enter the new version: ', newVersion => {
     console.log("Updated the Package.json\n\n")
 
     console.log("Writing to v.html\n")
-    fs.appendFileSync("./main.js", ` console.log('${newVersion}', '${Message}')`)
+    fs.appendFileSync("./main.js", ` console.log('${newVersion}', '${Message}');`)
     console.log("Wrote!\n")
 
     console.log("Building the Site with vite\n")

@@ -92,4 +92,4 @@ h1.addEventListener('click', () => {
   navigator.clipboard.writeText(copyText.value);
 
   alert("Copied: " + copyText.value);
-}); console.log('1.0.2', 'new logo')
+}); console.log('1.0.3', 'logo fix');

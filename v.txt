@@ -1,2 +1,2 @@
 v: 1.0.4 
- m: rotating logo feature
+ m: added animation

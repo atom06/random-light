@@ -1,2 +1,2 @@
 v: 1.0.4 
- m: added animation
+ m: slowed roation

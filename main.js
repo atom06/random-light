@@ -93,4 +93,4 @@ h1.addEventListener('click', () => {
   navigator.clipboard.writeText(copyText.value);
 
   alert("Copied: " + copyText.value);
-}); console.log('1.0.3', 'logo fix'); console.log('1.0.4', 'rotating logo feature'); console.log('1.0.4', 'added animation');
+}); console.log('1.0.3', 'logo fix'); console.log('1.0.4', 'rotating logo feature'); console.log('1.0.4', 'added animation'); console.log('1.0.4', 'slowed roation');

@@ -2,6 +2,7 @@ import './style.css'
 
 document.querySelector('#app').innerHTML = `
   <div>
+    <img src="./image.png">
     <i>Click on the id to copy</i>
     <h1>Press Genarate</h1>
     <button type="button">Genarate</button>
@@ -92,4 +93,4 @@ h1.addEventListener('click', () => {
   navigator.clipboard.writeText(copyText.value);
 
   alert("Copied: " + copyText.value);
-}); console.log('1.0.3', 'logo fix');
+}); console.log('1.0.3', 'logo fix'); console.log('1.0.4', 'rotating logo feature');

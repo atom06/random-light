@@ -1,2 +1,2 @@
-v: 1.0.0
-m: Added deploying script
+v: 1.0.2
+m: new logo

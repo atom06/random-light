@@ -82,3 +82,14 @@ button.addEventListener('click', () => {
     () => h1.textContent = rando,
   500)
 });
+
+h1.addEventListener('click', () => {
+  var copyText = document.querySelector("h1");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(copyText.value);
+
+  alert("Copied: " + copyText.value);
+})

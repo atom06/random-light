@@ -1,2 +1,1 @@
-export default `v: 1.0.4 
-m: slowed roation: Update, credit, copying feature, media query` 
+export default `1.0.5: Update, Credit, Copyin feature` 

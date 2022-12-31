@@ -20,7 +20,7 @@ rl.question('Enter the new version: ', newVersion => {
     console.log("Updated the Package.json")
     console.log("-------------------------------------------")
 
-    fs.writeFileSync("./src/v.js", `export default \`${version}: ${Message}\` `)
+    fs.writeFileSync("./src/v.js", `export default \`${newVersion}: ${Message}\` `)
     console.log("Wrote to v.js")
     console.log("-------------------------------------------")
 

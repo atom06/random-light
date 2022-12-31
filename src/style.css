@@ -48,10 +48,10 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: black;
 }
 
 button:hover {
@@ -63,10 +63,41 @@ button:focus-visible {
 }
 
 i {
-  font-size: xx-small;
   position: absolute;
-  bottom: 1px;
-  left: 1px;
+  bottom: 5px;
+}
+
+.left{
+  left: 5px
+}
+
+.right{
+  right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -65%);
+  transform: translate(-50%, -65%);
+  background-color: white;
+  padding: 60px 100px;
+  border-radius: 25px;
+  font-weight: bolder;
+}
+
+.success{
+  color: rgb(64, 237, 64);
+}
+
+.failure{
+  color: red
 }
 
 @media (prefers-color-scheme: dark) {
@@ -80,6 +111,17 @@ i {
   button {
     background-color: #213547;
     color: #f9f9f9;
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+  .left{
+    opacity: 0;
+  }
+
+  .right{
+    right: 0;
+    left: 0;
   }
 }
 

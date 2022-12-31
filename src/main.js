@@ -1,9 +1,11 @@
 import './style.css'
+import v from "./v.js"
 
 document.querySelector('#app').innerHTML = `
   <div>
     <img src="./image.png">
-    <i>Click on the id to copy</i>
+    <i class="left">Click on the id to copy</i>
+    <i class="right"><a href="https://github.com/atom06/random-light">Made with ❤️ by <u>atom06</u></a></i>
     <h1>Press Genarate</h1>
     <button type="button">Genarate</button>
   </div>
@@ -86,11 +88,27 @@ button.addEventListener('click', () => {
 
 h1.addEventListener('click', () => {
   var copyText = h1.textContent;
+  var popup = document.createElement('p');
+  popup.classList.add("popup")
 
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText).then(() => {
+    popup.innerText = `"${copyText}" is copied to your clipboard`
+    popup.classList.add("success")
+    document.body.appendChild(popup)
 
-  navigator.clipboard.writeText(copyText.value);
+    document.body.addEventListener("click", () => {
+      popup.remove()
+    })
+  }, (err) => {
+    popup.innerText = "Could not copy to clipboard " + toString(err)
+    popup.classList.add("failure")
+    document.body.appendChild(popup)
 
-  alert("Copied: " + copyText.value);
-}); console.log('1.0.3', 'logo fix'); console.log('1.0.4', 'rotating logo feature'); console.log('1.0.4', 'added animation'); console.log('1.0.4', 'slowed roation');
+    document.body.addEventListener("click", () => {
+      popup.remove()
+    })
+  });
+});
+
+console.log(v)
+

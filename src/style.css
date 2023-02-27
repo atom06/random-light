@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 :root {
-  font-family: cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 900;
   color-scheme: dark;
   color: rgba(255, 255, 255);
-  background-color: #242424;
+  background-color: #40c9a2;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +27,7 @@ h1 {
 }
 
 h1:hover {
-  text-shadow: 1px 1px white;
+  text-shadow: 1px 1px #e5f9e0;
 }
 
 img {
@@ -37,7 +39,7 @@ img {
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto; 
   padding: 2rem;
   text-align: center;
 }
@@ -100,20 +102,6 @@ a {
   color: red
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #ffffff;
-    background-color: #212121;
-  }
-  h1:hover {
-    text-shadow: 2px 2px #646cff;
-  }
-  button {
-    background-color: #213547;
-    color: #f9f9f9;
-  }
-}
-
 @media only screen and (max-width: 600px)  {
   .left{
     opacity: 0;
@@ -132,4 +120,14 @@ a {
   to {
     transform: rotate(359deg);
   }
+}
+
+.circle {
+  border: 1px solid black;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

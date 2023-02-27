@@ -2,6 +2,9 @@ import fs from 'fs';
 import readline from 'readline';
 import { execSync } from 'child_process';
 
+import {randomBytes} from "crypto"
+console.log(randomBytes(10).toString("base64url"))
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout

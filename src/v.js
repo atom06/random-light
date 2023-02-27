@@ -1,1 +1,1 @@
-export default `1.0.5: Update, Credit, Copyin feature` 
+export default `2.0.0: Rebrand` 

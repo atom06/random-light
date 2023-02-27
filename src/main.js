@@ -2,7 +2,7 @@ import './style.css'
 import v from "./v.js"
 
 document.querySelector('#app').innerHTML = `
-  <div>
+  <div class="circle">
     <img src="./image.png">
     <i class="left">Click on the id to copy</i>
     <i class="right"><a href="https://github.com/atom06/random-light">Made with ❤️ by <u>atom06</u></a></i>
@@ -88,17 +88,9 @@ button.addEventListener('click', () => {
 
 h1.addEventListener('click', () => {
   var copyText = h1.textContent;
-  var popup = document.createElement('p');
-  popup.classList.add("popup")
 
   navigator.clipboard.writeText(copyText).then(() => {
-    popup.innerText = `"${copyText}" is copied to your clipboard`
-    popup.classList.add("success")
-    document.body.appendChild(popup)
-
-    document.body.addEventListener("click", () => {
-      popup.remove()
-    })
+    alert(`"${copyText}" is copied to your clipboard`)
   }, (err) => {
     popup.innerText = "Could not copy to clipboard " + toString(err)
     popup.classList.add("failure")
